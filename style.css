@@ -1,0 +1,378 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color: #000;
+}
+
+header ul{
+    align-items: center;
+    height: 80px
+}
+
+header ul li a{
+    padding-bottom: 26px;
+    font-weight: 700;
+    width: 90px;
+    display: block;
+    font-size: 13px;
+}
+
+header .col-xl-3 a{
+    display: flex;
+    align-items: center;
+    color: #3763eb;
+    background: #fff;
+    padding: 10px;
+    width: 100px;
+    position: relative;
+    top: 15px;
+    border-radius: 40px;
+    margin-left: 50px;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 1s;
+}
+
+header .col-xl-3 a:hover{
+    color: #fff;
+    transition: 1s;
+}
+
+header img{
+    width: 120px;
+}
+
+header .header-button{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 100px;
+}
+
+header .header-button a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #7572fa;
+    border-radius:40px;
+    z-index:-1;
+}
+
+header .col-xl-3 a:hover::before{
+    width: 100%;
+    transition: .5s;
+}
+
+header{
+    background: #e7e6e6;
+    height: 80px;
+}
+
+header ul li{
+    height: 50px;
+    position: relative;
+    top: 14px;
+}
+
+
+
+header ul li:nth-child(2){
+    position: relative;
+    right: 20px;
+}
+
+.style-a-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    height: 100%;
+    width: 85%;
+    border-bottom: 1px solid #7572fa;
+    color: #3763eb;
+    font-weight: 700;
+}
+
+.style-a-1{
+    color: #3763eb;
+}
+
+.style-a-1:hover{
+    color: #3763eb;
+}
+
+header ul li a:hover::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5%;
+    height: 100%;
+    width: 85%;
+    border-bottom: 1px solid #7572fa;
+    color: #3763eb;
+    font-weight: 700;
+    transition: .5s;
+}
+
+header ul li a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -5%;
+    height: 100%;
+    width: 0;
+    border-bottom: 1px solid #7572fa;
+    color: #3763eb;
+    font-weight: 700;
+    transition: .5s;
+}
+
+
+.slider-content{
+    margin-left: 50px;
+    margin-top: 148px;
+}
+
+.slider-content-body p{
+    font-size: 13px;
+    color: #a4adb5;
+}
+
+.slider-content a{
+    font-size: 11px;
+    padding: 11px;
+    width: 130px;
+}
+
+
+header ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 170px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+header ul li:nth-child(5):hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+header ul li ul li{
+    background: #000fff;
+    position: relative;
+    right: 10px;
+}
+
+header ul li ul li a{
+    width: 110px;
+    color: #fff;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    transition:.5s;
+}
+
+header ul li ul li a::before{
+    content: "";
+    border: none !important;
+}
+
+header ul li ul li a:hover{
+    color: #fff;
+}
+
+.btn-primary:hover {
+    color: #0a58ca;
+    background-color: #fff;
+    border-color: #0a58ca;
+}
+
+
+.before::before{
+    content:"";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    top: 100px;
+    left: 0;
+    background: #0a84ff;
+}
+
+
+.product{
+    background: #f9fcff;
+    border-radius: 10px;
+    box-shadow: 10px 1px 10px #efefef;
+    transition: .5s;
+}
+
+.after::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 115%;
+    left: 0;
+    background: #9d8fec;
+}
+
+.after{
+    background: #5252f0;
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 50% 50% 50% 0;
+}
+
+.product-topper span{
+    color: #9d8fec;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+.video-container{
+    background: url(./video-img-template/video-bg.jpg) center center; 
+    color: #fff;
+    position: relative;
+}
+
+.video-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1b2846;
+    opacity: .6;
+} 
+
+
+.video-container-for-width{
+    z-index: 999;
+}
+
+.video-container a {
+    color: #3763eb;
+    background: #fff;
+    position: relative;
+    border-radius: 50%;
+    border: 1px double #fff;
+    animation-name: border;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    height: 70px;
+    display: flex;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+}
+
+.play-button-animated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container a::before{
+    content: "";
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation-name: djone;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+.video-container a::after{
+    content: "";
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    animation-name: djone;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes djone{
+
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1.2);
+        opacity: .4;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    75%{
+        transform: scale(1.8);
+        opacity: .9;
+    }
+    100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+
+} 
+
+.product:hover{
+    background: #404ef4;
+    color: #fff;
+}
+
+.product:hover p{
+    color: #fff;
+}
+
+.product p{
+    
+    font-size: 13px;
+    color: #6c757d;
+    margin-top: 30px;
+}
+
+.product:hover .after{
+    background: #fbfbfc;
+    color: #404ef4;
+}
+
+.product:hover .after::after{
+    background: #fff;
+}
